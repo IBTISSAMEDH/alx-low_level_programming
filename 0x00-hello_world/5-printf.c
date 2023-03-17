@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
-  *main - entry point
-  *printf print the line with proper grammar, but the outcome is a piece of art
-  *Return :always 0
-  */
+ * main - Entry point
+ * Description: prints "with proper grammar, but the outcome is a piece of
+ * art,"
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
