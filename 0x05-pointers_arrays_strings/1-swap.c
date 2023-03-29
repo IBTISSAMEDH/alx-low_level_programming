@@ -6,7 +6,7 @@
 *@b : takes the value of a
 *return :0
 */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
 	int c;
 
