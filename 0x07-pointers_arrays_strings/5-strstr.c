@@ -1,3 +1,4 @@
+#include "stdio.h"
 #include "main.h"
 
 /**
@@ -8,18 +9,18 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	for (; *haystack != '\0'; haystack++)
 	{
 		char *ptrh = haystack;
 		char *ptrn = needle;
 
-		while (*haystack && *ptrn && *haystack == *ptrn)
+		while (*ptrh == *ptrn && *ptrn != '\0')
 		{
-			haystack++;
+			ptrh++;
 			ptrn++;
 		}
-		if (!*ptrn)
-			return (ptrh);
+		if (*ptrn == '\0')
+			return (haystack);
 	}
-	return (0);
+	return (NULL);
 }
